@@ -25,7 +25,7 @@ function init(){
         const videosStatos = infosVideos()
         const videoMaisVisto = videosStatos.reduce((anterior, videoAtual) => {
             return anterior.visualizacoes > videoAtual.visualizacoes ? anterior : videoAtual //Retorna o video mais visto
-        }, 0)18
+        }, 0)
 
         const lista = videosStatos.sort(function (a, b){ //retorna uma lista dos mais visto para os menos vistos
             if (a.visualizacoes > b.visualizacoes) return -1
